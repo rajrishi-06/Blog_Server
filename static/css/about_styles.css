@@ -4,7 +4,6 @@
     font-weight: bold;
 }
 
-
 .navbar-nav .nav-link {
     color: white; /* Ensures text color is white */
     margin-right: 15px; /* Adds spacing between nav items */
@@ -99,33 +98,15 @@
 /*--------*/
 
 /* hero */
-
-
-.hero-content {
-    max-width: 70%;
-    text-align: start;
-    padding: 20px;
-}
-
-.hero-title {
-    letter-spacing:2px;
-    font-size: clamp(2rem, 5vw, 4rem);
-    font-weight: bolder;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.hero-subtitle {
-    letter-spacing:1px;
-    font-size: clamp(1.2rem, 3vw, 2rem);
-    /* font-weight: bold;
-    line-height: 1.5; */
-}
-.hero-para {
-    
-    letter-spacing:2px;
-    /* font-weight: bold; */
-    line-height: 1.5;
+#hero {
+    background: url("../images/roses_darkened.jpg") no-repeat center center;
+    background-size: cover; /* Ensures the image scales proportionally */
+    width: 100%; /* Stretches to the full width of the container */
+    height: 100vh; /* Takes the full height of the viewport */ /* Set the height to 100% of the viewport height */
+    display: flex;
+    justify-content: center; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
+    position: relative; /* Optional: for positioning elements inside */
 }
 .yrsa-text {
     font-family: "Yrsa", serif;

@@ -56,10 +56,10 @@
                     <a class="nav-link" href="{{ url_for('home') }}">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('home') }}">ABOUT</a>
+                    <a class="nav-link" href="{{ url_for('about') }}">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
+                    <a class="nav-link" href="{{ url_for('contact') }}">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -70,9 +70,9 @@
 <!--Hero section-->
 <header id="hero">
   <div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold text-increase text-body-emphasis">RISHI's BLOG</h1>
+    <h1 class="display-5 fw-bold text-increase  yrsa-text">RISHI's BLOG</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4 fw-bold slogan">"A SPACE FOR EVERY THOUGHT"</p>
+      <p class="lead mb-4 fw-bold slogan text-body-emphasis">"A SPACE FOR EVERY THOUGHT"</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
       </div>
     </div>
@@ -86,8 +86,8 @@
         class="col-md-8 offset-md-2 blog-card"
         data-url="{{ url_for('blog', num=blog_post['id']) }}">
         <h1 class="fw-bold">{{ blog_post['title'] }}</h1>
-        <h2>{{ blog_post['subtitle'] }}</h2>
-        <p>Posted by rishi on Jan 17th</p>
+        <h2 class="yrsa-text">{{ blog_post['subtitle'] }}</h2>
+        <p class="yrsa-text">Posted by {{ blog_post['author'] }} on {{ blog_post['date'] }}.</p>
         {% if not loop.last %}
         <hr class="card-separator" />
         {% endif %}

@@ -49,7 +49,7 @@
     }
 
     .navbar-nav .nav-link:hover {
-        color: #007bff; /* Highlight color on hover for small screens */
+        color: #ffcc00; /* Highlight color on hover for small screens */
         transform: scale(1.025);
     }
 }
@@ -90,7 +90,7 @@
 .brand-logo {
     height: 30px; /* Adjust height as needed */
     width: auto;
-    border-radius = 40px;
+    border-radius : 25px;
     margin-right: 10px; /* Spacing between the logo and text */
     vertical-align: middle; /* Align the logo with the text */
 }
@@ -137,6 +137,12 @@
     padding-top: 50px;
     background-color: #F6F4F0;
 }
+.yrsa-text {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 /*--------*/
 
 /*footer*/
